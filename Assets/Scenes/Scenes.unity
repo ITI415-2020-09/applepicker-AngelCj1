@@ -305,6 +305,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1968764147318793820, guid: 2211487d14a014ceb995a50dbe2b16b7, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1968764147318793822, guid: 2211487d14a014ceb995a50dbe2b16b7, type: 3}
       propertyPath: m_Name
       value: AppleTree
@@ -365,5 +369,9 @@ PrefabInstance:
       propertyPath: chanceToChangeDirections
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 2953928576779446085, guid: 2211487d14a014ceb995a50dbe2b16b7, type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 4904847935472976717, guid: 45d11b954c1d448e596823284cf45b0d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2211487d14a014ceb995a50dbe2b16b7, type: 3}
