@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class ApplePicker : MonoBehaviour {
 
     [Header("Set in Inspector")]
 
-    public GameObject basketPrefab;
+    public GameObject  basketPrefab;
 
     public int numBaskets = 3;
 
@@ -18,13 +20,13 @@ public class ApplePicker : MonoBehaviour {
 
     void Start() {
 
-        for (int i =0; i<numBaskets; i++) {
+        for (int i=0; i<numBaskets; i++) {
 
             GameObject tBasketGo = Instantiate<GameObject>(basketPrefab);
 
             Vector3 pos = Vector3.zero;
 
-            pos.y = basketBottomY + (basketSpacingY);
+            pos.y = basketBottomY + (basketSpacingY * i);
 
             tBasketGo.transform.position = pos;
         }
