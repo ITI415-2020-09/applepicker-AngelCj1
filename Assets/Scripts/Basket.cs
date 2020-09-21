@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Basket : MonoBehaviour { 
+public class Basket : MonoBehaviour
+{
 
-   
-    void Update() {
+
+
+    void Update()
+    {
+
 
         // Get the current screen position of the mouse from Input
 
@@ -31,6 +35,18 @@ public class Basket : MonoBehaviour {
         pos.x = mousePos3D.x;
 
         this.transform.position = pos;
-        
+    }
+
+    void OnCollisonEnter(Collision coll) {
+
+
+         // Find out what hit this basket
+
+        GameObject collidedWith = coll.gameObject;
+
+        if (collidedWith.tag == "Apple") {
+
+            Destroy(collidedWith);
+        }
     }
 }
